@@ -43,13 +43,13 @@ public class firefox {
 		navigation.to(baseUrl);
 	}
 	
-	/* public void browserTest()
+	 public void browserTest()
 	 {
 		 WebDriver driver=DriverWeb("fireforx","C:\\Program Files\\Mozilla Firefox\\firefox.exe");
 		 Navigation navigation=driver.navigate();
 		 navigation.to("http://www.google.com.hk");
 		 navigation.to("http://www.baidu.com");
-	 }*/
+	 }
 	
 	
 	
