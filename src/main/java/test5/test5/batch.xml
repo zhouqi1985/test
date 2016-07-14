@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bean id="productReader" class="org.springframework.batch.item.file.FlatFileItemReader" scope="step">
+
+    <!-- <property name="resource" value="file:./sample.csv" /> -->
+    <property name="resource" value="file:#{jobParameters['inputFile']}" />
+
+    <property name="linesToSkip" value="1" />
+
+    <property name="lineMapper">
+        <bean class="org.springframework.batch.item.file.mapping.DefaultLineMapper">
+
+            <property name="lineTokenizer">
+                <bean class="org.springframework.batch.item.file.transform.DelimitedLineTokenizer">
+                    <property name="names" value="loginid,logonpassword,verifycode,protocal,searchtext" />
+                </bean>
+            </property>
+
+            <property name="fieldSetMapper">
+                <bean class="test5.test5.logonBaiduFieldSetMapper" />
+            </property>
+        </bean>
+    </property>
+</bean>
