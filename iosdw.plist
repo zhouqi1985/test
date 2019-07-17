@@ -15,6 +15,19 @@
                     <key>url</key>
                     <string>http://zw.hancheng.gov.cn:8082/content/download/H550A7AF1_0717124637.ipa</string>
                 </dict>
+                <dict>
+                    <key>kind</key>
+                    <string>display-image</string>
+                    <key>url</key>
+                    <string>http://zw.hancheng.gov.cn:8082/content/images/b-4.png</string>
+                </dict>
+                <dict>
+                    <key>kind</key>
+                    <string>full-size-image</string>
+                    <key>url</key>
+                    <string>http://zw.hancheng.gov.cn:8082/content/b-5.jpg</string>
+                </dict>
+
             </array>
             <key>metadata</key>
             <dict>
@@ -25,7 +38,7 @@
                 <key>kind</key>
                 <string>software</string>
                 <key>title</key>
-                <string>cmcapp</string>
+                <string>hcapp</string>
             </dict>
         </dict>
     </array>
